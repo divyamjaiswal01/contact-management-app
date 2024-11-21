@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/contacts",
+  baseURL: "http://localhost:3000/contacts",
 });
 
 export const getContacts = () => api.get("/");
