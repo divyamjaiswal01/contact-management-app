@@ -1,8 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000/contacts",
+  baseURL: "https://your-deployed-backend-url.com/contacts", // Use your backend's deployed URL
 });
+
 
 export const getContacts = () => api.get("/");
 export const addContact = (contact) => api.post("/", contact);
