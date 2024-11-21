@@ -84,12 +84,14 @@ app.get("/contacts", async (req, res) => {
 });
 
 // Error handling middleware for unexpected errors
-app.use((err, req, res, next) => {
-  console.error("Unexpected error:", err.stack);
-  res
-    .status(500)
-    .json({ message: "Something went wrong!", error: err.message });
-});
+app.use(
+  cors({
+    origin: "https://your-deployed-frontend-url.com", // Replace with your frontend's deployed URL
+    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
+    credentials: true,
+  })
+);
+
 
 // Start the server
 app.listen(port, () => {
@@ -133,3 +135,4 @@ app.post("/contacts", async (req, res) => {
       .json({ message: "Error saving contact.", error: error.message });
   }
 });
+
