@@ -1,0 +1,86 @@
+/* Contact Form Styling */
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-form-container input {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form-container input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.contact-form-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form-container button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Contacts Table Styling */
+.contacts-table-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacts-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contacts-table th,
+.contacts-table td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.contacts-table th {
+  background-color: #4caf50;
+  color: white;
+}
+
+.contacts-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
